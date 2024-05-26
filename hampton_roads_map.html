@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b80c5cca014b55e85caf069c69cc8c37 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b80c5cca014b55e85caf069c69cc8c37" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b80c5cca014b55e85caf069c69cc8c37 = L.map(
+                "map_b80c5cca014b55e85caf069c69cc8c37",
+                {
+                    center: [36.85, -76.3],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0adcf29f3819597924c18161fb910e7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b0adcf29f3819597924c18161fb910e7.addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+            var marker_cc95af2c7f7b7345258c7a41febd3977 = L.marker(
+                [37.2104, -76.3869],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_488b103bc712d3007bb5e2292ab6e7aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d9ff12f3dafc0678817efb82417052e = $(`<div id="html_7d9ff12f3dafc0678817efb82417052e" style="width: 100.0%; height: 100.0%;">York-Poquoson Sheriff’s Office: 22 cameras</div>`)[0];
+                popup_488b103bc712d3007bb5e2292ab6e7aa.setContent(html_7d9ff12f3dafc0678817efb82417052e);
+            
+        
+
+        marker_cc95af2c7f7b7345258c7a41febd3977.bindPopup(popup_488b103bc712d3007bb5e2292ab6e7aa)
+        ;
+
+        
+    
+    
+            marker_cc95af2c7f7b7345258c7a41febd3977.bindTooltip(
+                `<div>
+                     York-Poquoson Sheriff’s Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3a9e2de12c44582d2fcef012c7db360 = L.marker(
+                [36.7682, -76.2875],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_fcc762952aa33608589ac60ff3b0dd39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06a64c41074a9c50c03bba8cbd885d21 = $(`<div id="html_06a64c41074a9c50c03bba8cbd885d21" style="width: 100.0%; height: 100.0%;">Chesapeake Police Department: 44 cameras</div>`)[0];
+                popup_fcc762952aa33608589ac60ff3b0dd39.setContent(html_06a64c41074a9c50c03bba8cbd885d21);
+            
+        
+
+        marker_b3a9e2de12c44582d2fcef012c7db360.bindPopup(popup_fcc762952aa33608589ac60ff3b0dd39)
+        ;
+
+        
+    
+    
+            marker_b3a9e2de12c44582d2fcef012c7db360.bindTooltip(
+                `<div>
+                     Chesapeake Police Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14f2572b108d8300139041997e7a556d = L.marker(
+                [37.0299, -76.3452],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_babada63385149fffe1a99e8a6f62a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_184bbc74e74dfdc3d29443838ca1c113 = $(`<div id="html_184bbc74e74dfdc3d29443838ca1c113" style="width: 100.0%; height: 100.0%;">Hampton Police Division: 54 cameras</div>`)[0];
+                popup_babada63385149fffe1a99e8a6f62a0b.setContent(html_184bbc74e74dfdc3d29443838ca1c113);
+            
+        
+
+        marker_14f2572b108d8300139041997e7a556d.bindPopup(popup_babada63385149fffe1a99e8a6f62a0b)
+        ;
+
+        
+    
+    
+            marker_14f2572b108d8300139041997e7a556d.bindTooltip(
+                `<div>
+                     Hampton Police Division
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20554935a5370fe12dca10147fbd5c59 = L.marker(
+                [36.8354, -76.2983],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_75f14bf59236117bfb5cb88935f1318e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a58c9eda6118114745286d6623c14aae = $(`<div id="html_a58c9eda6118114745286d6623c14aae" style="width: 100.0%; height: 100.0%;">Portsmouth Police Department: 60 cameras</div>`)[0];
+                popup_75f14bf59236117bfb5cb88935f1318e.setContent(html_a58c9eda6118114745286d6623c14aae);
+            
+        
+
+        marker_20554935a5370fe12dca10147fbd5c59.bindPopup(popup_75f14bf59236117bfb5cb88935f1318e)
+        ;
+
+        
+    
+    
+            marker_20554935a5370fe12dca10147fbd5c59.bindTooltip(
+                `<div>
+                     Portsmouth Police Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7f1499ca765ee9e9605a297578770d1 = L.marker(
+                [37.0871, -76.473],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_999dab8e1eb210c7e3e315ac9758fe98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_178a53fb6557fbd5a31f0b84fbe9e2d1 = $(`<div id="html_178a53fb6557fbd5a31f0b84fbe9e2d1" style="width: 100.0%; height: 100.0%;">Newport News Police Department: 74 cameras</div>`)[0];
+                popup_999dab8e1eb210c7e3e315ac9758fe98.setContent(html_178a53fb6557fbd5a31f0b84fbe9e2d1);
+            
+        
+
+        marker_d7f1499ca765ee9e9605a297578770d1.bindPopup(popup_999dab8e1eb210c7e3e315ac9758fe98)
+        ;
+
+        
+    
+    
+            marker_d7f1499ca765ee9e9605a297578770d1.bindTooltip(
+                `<div>
+                     Newport News Police Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dbfca1701eaa7d373b5c4ccfb4419a8 = L.marker(
+                [36.8508, -76.2859],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_7b5d57b087863f62db3afe6eab2e7997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_730d1e79f8941a6704ca7915fe500d87 = $(`<div id="html_730d1e79f8941a6704ca7915fe500d87" style="width: 100.0%; height: 100.0%;">Norfolk Police Department: 172 cameras</div>`)[0];
+                popup_7b5d57b087863f62db3afe6eab2e7997.setContent(html_730d1e79f8941a6704ca7915fe500d87);
+            
+        
+
+        marker_2dbfca1701eaa7d373b5c4ccfb4419a8.bindPopup(popup_7b5d57b087863f62db3afe6eab2e7997)
+        ;
+
+        
+    
+    
+            marker_2dbfca1701eaa7d373b5c4ccfb4419a8.bindTooltip(
+                `<div>
+                     Norfolk Police Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41b39768e78c40daa8d0bd424941681f = L.marker(
+                [36.8529, -75.978],
+                {}
+            ).addTo(map_b80c5cca014b55e85caf069c69cc8c37);
+        
+    
+        var popup_90c92a4775eeb97c3ab81e1cddb1b09a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a15db4e707b144d0f3b16762ce0550c = $(`<div id="html_4a15db4e707b144d0f3b16762ce0550c" style="width: 100.0%; height: 100.0%;">Virginia Beach Police Department: 19 cameras</div>`)[0];
+                popup_90c92a4775eeb97c3ab81e1cddb1b09a.setContent(html_4a15db4e707b144d0f3b16762ce0550c);
+            
+        
+
+        marker_41b39768e78c40daa8d0bd424941681f.bindPopup(popup_90c92a4775eeb97c3ab81e1cddb1b09a)
+        ;
+
+        
+    
+    
+            marker_41b39768e78c40daa8d0bd424941681f.bindTooltip(
+                `<div>
+                     Virginia Beach Police Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
